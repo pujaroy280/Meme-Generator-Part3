@@ -18,7 +18,7 @@ export default function Meme() {
     function, as seen below:
     */
     
-    React.useQuery(() => {
+    React.useState(() => {
         async function getMemes() {
             const res = await fetch("https://api.imgflip.com/get_memes")
             const data = await res.json()
